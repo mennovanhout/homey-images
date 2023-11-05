@@ -16,5 +16,8 @@
   },
   "1.1.4": {
     "en": "Solve error when setting image token"
+  },
+  "1.1.5": {
+    "en": "Add source url"
   }
 }
