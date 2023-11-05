@@ -1,0 +1,70 @@
+{
+  "actions": [
+    {
+      "id": "set-image",
+      "title": {
+        "en": "Set image",
+        "nl": "Afbeelding instellen"
+      },
+      "titleFormatted": {
+        "en": "Set [[droptoken]] with title [[name]] and identifier [[identifier]]",
+        "nl": "stel [[droptoken]] in met naam [[name]] en id [[identifier]]"
+      },
+      "droptoken": [
+        "image"
+      ],
+      "args": [
+        {
+          "type": "text",
+          "name": "identifier",
+          "placeholder": {
+            "en": "Enter a identifier",
+            "nl": "Voer een identifier in"
+          }
+        },
+        {
+          "type": "text",
+          "name": "name",
+          "placeholder": {
+            "en": "Enter a name",
+            "nl": "Voer een naam in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "set-image-from-url",
+      "title": {
+        "en": "Set image from url",
+        "nl": "Afbeelding instellen vanaf url"
+      },
+      "titleFormatted": {
+        "en": "Set [[url]] with title [[name]] and identifier [[identifier]]",
+        "nl": "stel [[url]] in met naam [[name]] en id [[identifier]]"
+      },
+      "args": [
+        {
+          "type": "text",
+          "name": "url",
+          "placeholder": {
+            "en": "enter an URL"
+          }
+        },
+        {
+          "type": "text",
+          "name": "identifier",
+          "placeholder": {
+            "en": "enter a identifier"
+          }
+        },
+        {
+          "type": "text",
+          "name": "name",
+          "placeholder": {
+            "en": "Enter a name"
+          }
+        }
+      ]
+    }
+  ]
+}

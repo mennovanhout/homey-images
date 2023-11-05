@@ -1,0 +1,20 @@
+{
+  "1.0.0": {
+    "en": "First release"
+  },
+  "1.1.0": {
+    "en": "Added url to image card"
+  },
+  "1.1.1": {
+    "en": "Remove unused card"
+  },
+  "1.1.2": {
+    "en": "Solve image bug where a lot of them are generated"
+  },
+  "1.1.3": {
+    "en": "Solved the bug for real now"
+  },
+  "1.1.4": {
+    "en": "Solve error when setting image token"
+  }
+}

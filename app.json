@@ -1,0 +1,150 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.mennovanhout.images",
+  "version": "1.1.4",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Image",
+    "nl": "Afbeelding"
+  },
+  "description": {
+    "en": "Add support for images inside the Homey app",
+    "nl": "Voeg ondersteuning voor afbeeldingen toe aan de Homey app"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Menno van Hout",
+    "email": "menno.vanhout@gmail.com"
+  },
+  "support": "mailto:info@mennovanhout.nl",
+  "brandColor": "#cc00ff",
+  "homepage": "https://hdashboards.app",
+  "flow": {
+    "actions": [
+      {
+        "id": "set-image",
+        "title": {
+          "en": "Set image",
+          "nl": "Afbeelding instellen"
+        },
+        "titleFormatted": {
+          "en": "Set [[droptoken]] with title [[name]] and identifier [[identifier]]",
+          "nl": "stel [[droptoken]] in met naam [[name]] en id [[identifier]]"
+        },
+        "droptoken": [
+          "image"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=image"
+          },
+          {
+            "type": "text",
+            "name": "identifier",
+            "placeholder": {
+              "en": "Enter a identifier",
+              "nl": "Voer een identifier in"
+            }
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": {
+              "en": "Enter a name",
+              "nl": "Voer een naam in"
+            }
+          }
+        ]
+      },
+      {
+        "id": "set-image-from-url",
+        "title": {
+          "en": "Set image from url",
+          "nl": "Afbeelding instellen vanaf url"
+        },
+        "titleFormatted": {
+          "en": "Set [[url]] with title [[name]] and identifier [[identifier]]",
+          "nl": "stel [[url]] in met naam [[name]] en id [[identifier]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=image"
+          },
+          {
+            "type": "text",
+            "name": "url",
+            "placeholder": {
+              "en": "enter an URL"
+            }
+          },
+          {
+            "type": "text",
+            "name": "identifier",
+            "placeholder": {
+              "en": "enter a identifier"
+            }
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": {
+              "en": "Enter a name"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Images",
+        "nl": "Afbeeldingen"
+      },
+      "class": "other",
+      "capabilities": [],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/image/assets/images/small.png",
+        "large": "/drivers/image/assets/images/large.png",
+        "xlarge": "/drivers/image/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "image"
+    }
+  ]
+}

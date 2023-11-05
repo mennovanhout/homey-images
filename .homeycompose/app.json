@@ -1,0 +1,33 @@
+{
+  "id": "nl.mennovanhout.images",
+  "version": "1.1.4",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Image",
+    "nl": "Afbeelding"
+  },
+  "description": {
+    "en": "Add support for images inside the Homey app",
+    "nl": "Voeg ondersteuning voor afbeeldingen toe aan de Homey app"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Menno van Hout",
+    "email": "menno.vanhout@gmail.com"
+  },
+  "support": "mailto:info@mennovanhout.nl",
+  "brandColor": "#cc00ff",
+  "homepage": "https://hdashboards.app"
+}

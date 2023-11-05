@@ -1,0 +1,8 @@
+{
+  "esModuleInterop": true,
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": ".homeybuild/",
+  }
+}
